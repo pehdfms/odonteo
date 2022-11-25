@@ -19,7 +19,8 @@ describe("Main Page", () => {
       },
     });
 
-    const installmentsInput = component.container.querySelector("#installments")
+    const installmentsInput =
+      component.container.querySelector("#installments");
     expect(installmentsInput).toBeInTheDocument();
 
     fireEvent.change(installmentsInput, {
@@ -28,7 +29,7 @@ describe("Main Page", () => {
       },
     });
 
-    const billingDayInput = component.container.querySelector("#billing-day")
+    const billingDayInput = component.container.querySelector("#billing-day");
     expect(billingDayInput).toBeInTheDocument();
 
     fireEvent.change(billingDayInput, {
@@ -37,7 +38,9 @@ describe("Main Page", () => {
       },
     });
 
-    const firstInstallmentDateInput = component.container.querySelector("#first-installment-date");
+    const firstInstallmentDateInput = component.container.querySelector(
+      "#first-installment-date"
+    );
     expect(firstInstallmentDateInput).toBeInTheDocument();
 
     fireEvent.change(firstInstallmentDateInput, {
@@ -46,7 +49,8 @@ describe("Main Page", () => {
       },
     });
 
-    const registerButton = component.container.querySelector("#register-button");
+    const registerButton =
+      component.container.querySelector("#register-button");
     expect(registerButton).toBeInTheDocument();
   });
 });
