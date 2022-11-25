@@ -43,15 +43,11 @@ function Login() {
       body: JSON.stringify(loginInformation),
     };
 
-    console.log("got here");
-
     const {
       user,
       message: apiMessage,
       token,
     } = await fetchApi("https://odonteo-backend.herokuapp.com/login", options);
-
-    console.log(message);
 
     if (apiMessage === "Login efetuado com sucesso!") {
       localStorage.setItem("user", JSON.stringify(user));
