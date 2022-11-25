@@ -1,8 +1,8 @@
 export function handleChange({ target: { name, value } }, setStateFunction) {
   setStateFunction((oldState) => {
-    return ({
+    return {
       ...oldState,
       [name]: value,
-    });
+    };
   });
 }

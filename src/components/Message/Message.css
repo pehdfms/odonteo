@@ -58,9 +58,9 @@
 
 @media only screen and (max-width: 600px) {
   .success {
-    background-color: #549E9C;
+    background-color: #549e9c;
   }
-  
+
   .error {
     background-color: #ed0c80;
   }
@@ -96,4 +96,3 @@
     bottom: 135px;
   }
 }
-

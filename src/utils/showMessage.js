@@ -2,14 +2,14 @@ export default function showMessage(setMessage, text, status) {
   setMessage({
     show: true,
     text,
-    status
+    status,
   });
 
   setTimeout(() => {
     setMessage({
       show: false,
-      text: '',
-      status: ''
-    })
+      text: "",
+      status: "",
+    });
   }, 2000);
 }
